@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+FREE SMS SEND
+{% endblock %}
+
+{% block body %}
+<h1>FREE ANONYMOUS SMS SENDER</h1>
+<form method="post" enctype="multipart/form-data">
+    Phone Number
+    <input type="text" name="phone" id="phone"><br>
+    Text
+    <input type="text" name="text" id="text"><br>
+    Https Proxy (IP:PORT) (For example from <a href="https://spys.one/en/https-ssl-proxy/">here</a>)
+    <input type="text" name="proxy" id="proxy"><br>
+    <input type="submit" value="submit"><br>
+</form>
+{% endblock %}
