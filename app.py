@@ -15,7 +15,7 @@ def index():
             resp = requests.post('https://textbelt.com/text', {
                 'phone': phone,
                 'message': text,
-                'key': 'textbelt_test',
+                'key': 'textbelt',
             }, proxies={"http": proxy, "https": proxy})
             if resp.json()["success"]:
                 return redirect("/success")
